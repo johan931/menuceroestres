@@ -213,15 +213,15 @@
       "productos": [
         {
           "nombre": "Pollo",
-          "precio": 85
+          "precio": 80
         },
         {
           "nombre": "Atún",
-          "precio": 85
+          "precio": 80
         },
         {
           "nombre": "Jamón",
-          "precio": 85
+          "precio": 80
         }
       ]
     },
@@ -252,7 +252,7 @@
       "nombre": "Menú del Día",
       "productos": [
         {
-          "nombre": "Platillo del día (variable)",
+          "nombre": "Platillo del día (Milanesa de pollo)",
           "precio": 85
         }
       ]
@@ -406,7 +406,7 @@
       "productos": [
         {
           "nombre": "Charola de fruta",
-          "precio": 85
+          "precio": 50
         },
         {
           "nombre": "Yogurt con fruta (natural o fresa)",
