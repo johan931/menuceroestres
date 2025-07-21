@@ -122,6 +122,9 @@ function updateResumen() {
   let cantidadEntrepansOEnsaladas = 0;
   const aderezosPedidos = [];
 
+  // Definir las categorías que cuentan como "entrepans"
+  const categoriasEntrepans = ["Sandwich", "Cuernito", "Bagel", "Chapata", "Baguette"];
+
   // Primero, procesar todos los productos para identificar y separar aderezos
   seleccionados.forEach(([prod, cant]) => {
     // Si el nombre del producto comienza con "Aderezos (2 gratis, extra $5)"
@@ -129,7 +132,9 @@ function updateResumen() {
       aderezosPedidos.push({ nombre: prod, cantidad: cant });
     } else {
       // Identificar si es un "entrepan" o "ensalada" para contar los productos principales
-      if (prod.startsWith("Entrepanes") || prod.startsWith("Ensaladas")) {
+      // Ahora verificamos si la categoría del producto está en nuestra lista de entrepans o es una ensalada
+      const categoriaProducto = prod.split(' - ')[0]; // Obtener solo la primera parte del nombre completo
+      if (categoriasEntrepans.includes(categoriaProducto) || categoriaProducto === "Ensaladas") {
         cantidadEntrepansOEnsaladas += cant; // Suma la cantidad de este tipo de producto
       }
       const precioUnitario = preciosProductos[prod] || 0;
