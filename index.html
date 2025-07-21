@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF="8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CEROESTRES - Prepedidos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="CEROESTRES Logo" id="logo">
+    <h1>Menú Virtual</h1>
+  </header>
+
+  <main>
+    <div id="menu" class="menu-container"></div>
+
+    <form id="pedidoForm">
+      <h2>Tu pedido</h2>
+      <label for="nombre">Nombre:</label><br/>
+      <input type="text" id="nombre" required><br/><br/>
+
+      <div class="form-group">
+          <label for="horaSelect">Hora estimada de recogida:</label>
+          <div style="display: flex; gap: 10px;">
+              <select id="horaSelect" name="hora" required>
+                  </select>
+              <select id="minutoSelect" name="minuto" required>
+                  </select>
+          </div>
+      </div>
+      <br/>
+
+      <label for="comprobante">Comprobante de pago (opcional):</label><br/>
+      <input type="file" id="comprobante"><br/><br/>
+
+      <div id="resumenPedido"></div>
+
+      <button type="submit">Enviar pedido</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
