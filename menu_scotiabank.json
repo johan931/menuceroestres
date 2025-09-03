@@ -33,7 +33,7 @@
           "precio": 100
         },
         {
-          "nombre": "Salmon y philadelphia",
+          "nombre": "Salmón y philadelphia",
           "precio": 115
         },
         {
@@ -74,7 +74,7 @@
           "precio": 105
         },
         {
-          "nombre": "Salmon y philadelphia",
+          "nombre": "Salmón y philadelphia",
           "precio": 120
         },
         {
@@ -116,7 +116,7 @@
           "precio": 105
         },
         {
-          "nombre": "Salmon y philadelphia",
+          "nombre": "Salmón y philadelphia",
           "precio": 120
         },
         {
@@ -158,7 +158,7 @@
           "precio": 105
         },
         {
-          "nombre": "Salmon y philadelphia",
+          "nombre": "Salmón y philadelphia",
           "precio": 120
         },
         {
@@ -199,7 +199,7 @@
           "precio": 120
         },
         {
-          "nombre": "Salmon y philadelphia",
+          "nombre": "Salmón y philadelphia",
           "precio": 125
         },
         {
@@ -209,37 +209,41 @@
       ]
     },
     {
-      "nombre": "Ensaladas",
+      "nombre": "Ensaladas y frutas",
       "productos": [
         {
-          "nombre": "Pollo - Mediana",
+          "nombre": "Pollo - Md",
           "precio": 75
         },
         {
-          "nombre": "Pollo - Grande",
+          "nombre": "Pollo - Gr",
           "precio": 100
         },
         {
-          "nombre": "Atún - Mediana",
+          "nombre": "Atún - Md",
           "precio": 75
         },
                 {
-          "nombre": "Atún - Grande",
+          "nombre": "Atún - Gr",
           "precio": 100
         },
         {
-          "nombre": "Jamón - Mediana",
+          "nombre": "Jamón - Md",
           "precio": 75
         },
         {
-          "nombre": "Jamón - Grande",
+          "nombre": "Jamón - Gr",
           "precio": 100
         },
         {
-          "nombre": "Jamón, Pollo o Atún - Empresalia",
-          "precio": 85
+          "nombre": "Charola de fruta",
+          "precio": 50
+        },
+        {
+          "nombre": "Yogurt con fruta",
+          "precio": 50
         }
-      ]
+        ]
     },
     {
       "nombre": "Aderezos (2 gratis, extra $5)",
@@ -264,57 +268,49 @@
         }
       ]
     },
-    {
-      "nombre": "Menú del Día (Empresalia)",
-      "productos": [
-        {
-          "nombre": "Platillo del día",
-          "precio": 85
-        }
-      ]
-    },
+    
     {
       "nombre": "Jugos",
       "productos": [
         {
-          "nombre": "Naranja - Grande",
-          "precio": 100
-        },
-        {
-          "nombre": "Naranja - Chico",
+          "nombre": "Naranja - Ch",
           "precio": 55
         },
         {
-          "nombre": "Verde - Grande",
+          "nombre": "Naranja - Gr",
           "precio": 100
         },
         {
-          "nombre": "Verde - Chico",
+          "nombre": "Verde - Ch",
           "precio": 55
         },
         {
-          "nombre": "Zanahoria - Grande",
+          "nombre": "Verde - Gr",
           "precio": 100
         },
         {
-          "nombre": "Zanahoria - Chico",
+          "nombre": "Zanahoria - Ch",
           "precio": 55
         },
         {
-          "nombre": "Antigripal - Grande",
+          "nombre": "Zanahoria - Gr",
           "precio": 100
         },
         {
-          "nombre": "Antigripal - Chico",
+          "nombre": "Antigripal - Ch",
           "precio": 55
         },
         {
-          "nombre": "Antioxidante - Grande",
+          "nombre": "Antigripal - Gr",
           "precio": 100
         },
         {
-          "nombre": "Antioxidante - Chico",
+          "nombre": "Antioxidante - Ch",
           "precio": 55
+        },
+        {
+          "nombre": "Antioxidante - Gr",
+          "precio": 100
         }
       ]
     },
@@ -322,43 +318,35 @@
       "nombre": "Aguas",
       "productos": [
         {
-          "nombre": "Jamaica con arándano - Chica",
+          "nombre": "Jamaica/arándano - Ch",
           "precio": 25
         },
         {
-          "nombre": "Jamaica con arándano - Grande",
+          "nombre": "Jamaica/arándano - Gr",
           "precio": 45
         },
         {
-          "nombre": "Horchata de avena - Chica",
+          "nombre": "Horchata/avena - Ch",
           "precio": 25
         },
         {
-          "nombre": "Horchata de avena - Grande",
+          "nombre": "Horchata/avena - Gr",
           "precio": 45
         },
         {
-          "nombre": "Horchata de fresa - Chica",
+          "nombre": "Mojito de chía - Ch",
           "precio": 25
         },
         {
-          "nombre": "Horchata de fresa - Grande",
+          "nombre": "Mojito de chía - Gr",
           "precio": 45
         },
         {
-          "nombre": "Mojito de chía - Chica",
+          "nombre": "Detox/guayaba - Ch",
           "precio": 25
         },
         {
-          "nombre": "Mojito de chía - Grande",
-          "precio": 45
-        },
-        {
-          "nombre": "Detox (guayaba) - Chica",
-          "precio": 25
-        },
-        {
-          "nombre": "Detox (guayaba) - Grande",
+          "nombre": "Detox/guayaba - Gr",
           "precio": 45
         }
       ]
@@ -422,24 +410,19 @@
       ]
     },
     {
-      "nombre": "Otros alimentos",
-      "productos": [
-        {
-          "nombre": "Charola de fruta",
-          "precio": 50
-        },
-        {
-          "nombre": "Yogurt con fruta (natural o fresa)",
-          "precio": 50
-        }
-      ]
-    },
-    {
       "nombre": "Postres",
       "productos": [
         {
           "nombre": "Arroz con leche",
-          "precio": 30
+          "precio": 33
+        },
+        {
+          "nombre": "Jericalla",
+          "precio": 33
+        },
+        {
+          "nombre": "Brownie",
+          "precio": 39
         },
         {
           "nombre": "Muffin grande",
@@ -449,9 +432,25 @@
           "nombre": "Gelatina de Yogurt",
           "precio": 30
         },
+        {
+          "nombre": "Panqué/chabacano",
+          "precio": 25
+        },
+        {
+          "nombre": "Panqué/zanahoria",
+          "precio": 25
+        },
+         {
+          "nombre": "Pay",
+          "precio": 30
+        },
+        {
+          "nombre": "Struddel/manzana",
+          "precio": 35
+        },
          {
           "nombre": "Tapioca",
-          "precio": 30
+          "precio": 33
          }
         ]
       }
