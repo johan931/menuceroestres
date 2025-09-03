@@ -212,27 +212,27 @@
       "nombre": "Ensaladas",
       "productos": [
         {
-          "nombre": "Pollo - Mediana",
+          "nombre": "Pollo - Md",
           "precio": 75
         },
         {
-          "nombre": "Pollo - Grande",
+          "nombre": "Pollo - Gr",
           "precio": 100
         },
         {
-          "nombre": "Atún - Mediana",
+          "nombre": "Atún - Md",
           "precio": 75
         },
                 {
-          "nombre": "Atún - Grande",
+          "nombre": "Atún - Gr",
           "precio": 100
         },
         {
-          "nombre": "Jamón - Mediana",
+          "nombre": "Jamón - Md",
           "precio": 75
         },
         {
-          "nombre": "Jamón - Grande",
+          "nombre": "Jamón - Gr",
           "precio": 100
         }
         ]
@@ -265,44 +265,44 @@
       "nombre": "Jugos",
       "productos": [
         {
-          "nombre": "Naranja - Grande",
-          "precio": 100
-        },
-        {
-          "nombre": "Naranja - Chico",
+          "nombre": "Naranja - Ch",
           "precio": 55
         },
         {
-          "nombre": "Verde - Grande",
+          "nombre": "Naranja - Gr",
           "precio": 100
         },
         {
-          "nombre": "Verde - Chico",
+          "nombre": "Verde - Ch",
           "precio": 55
         },
         {
-          "nombre": "Zanahoria - Grande",
+          "nombre": "Verde - Gr",
           "precio": 100
         },
         {
-          "nombre": "Zanahoria - Chico",
+          "nombre": "Zanahoria - Ch",
           "precio": 55
         },
         {
-          "nombre": "Antigripal - Grande",
+          "nombre": "Zanahoria - Gr",
           "precio": 100
         },
         {
-          "nombre": "Antigripal - Chico",
+          "nombre": "Antigripal - Ch",
           "precio": 55
         },
         {
-          "nombre": "Antioxidante - Grande",
+          "nombre": "Antigripal - Gr",
           "precio": 100
         },
         {
-          "nombre": "Antioxidante - Chico",
+          "nombre": "Antioxidante - Ch",
           "precio": 55
+        },
+        {
+          "nombre": "Antioxidante - Gr",
+          "precio": 100
         }
       ]
     },
@@ -310,35 +310,35 @@
       "nombre": "Aguas",
       "productos": [
         {
-          "nombre": "Jamaica/arándano - Chica",
+          "nombre": "Jamaica/arándano - Ch",
           "precio": 25
         },
         {
-          "nombre": "Jamaica/arándano - Grande",
+          "nombre": "Jamaica/arándano - Gr",
           "precio": 45
         },
         {
-          "nombre": "Horchata/avena - Chica",
+          "nombre": "Horchata/avena - Ch",
           "precio": 25
         },
         {
-          "nombre": "Horchata/avena - Grande",
+          "nombre": "Horchata/avena - Gr",
           "precio": 45
         },
         {
-          "nombre": "Mojito de chía - Chica",
+          "nombre": "Mojito de chía - Ch",
           "precio": 25
         },
         {
-          "nombre": "Mojito de chía - Grande",
+          "nombre": "Mojito de chía - Gr",
           "precio": 45
         },
         {
-          "nombre": "Detox - Chica",
+          "nombre": "Detox - Ch",
           "precio": 25
         },
         {
-          "nombre": "Detox - Grande",
+          "nombre": "Detox - Gr",
           "precio": 45
         }
       ]
