@@ -1,22 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Get the branch name from the URL, if it exists
+  // Obtener el nombre de la sucursal de la URL
   const urlParams = new URLSearchParams(window.location.search);
-  const sucursal = urlParams.get('sucursal') || 'matriz'; // Defaults to "matriz" if no parameter is provided
+  const sucursal = urlParams.get('sucursal') || 'matriz'; // Por defecto a matriz si no hay parámetro
 
-  // Use a precise, absolute path relative to the website's root
-  const menuPath = `menu_${sucursal}.json`;
+  // Capitalizar la primera letra del nombre de la sucursal
+  const nombreSucursalCapitalizado = sucursal.charAt(0).toUpperCase() + sucursal.slice(1);
 
-  fetch(menuPath)
+  // Actualizar el título de la página y el encabezado
+  document.title = `CEROESTRES - Menú ${nombreSucursalCapitalizado}`;
+  const tituloEncabezado = document.getElementById('tituloMenu');
+  if (tituloEncabezado) {
+    tituloEncabezado.innerText = `Menú virtual - ${nombreSucursalCapitalizado}`;
+  }
+  
+  fetch(`menu_${sucursal}.json`) // ¡Ruta corregida!
     .then(res => {
-      // Check if the response is ok (status code 200-299)
+      // Verificar si la respuesta es exitosa (código de estado 200-299)
       if (!res.ok) {
-        throw new Error(`HTTP error! status: ${res.status}`);
+        throw new Error(`Error HTTP! estado: ${res.status}`);
       }
       return res.json();
     })
     .then(data => {
       renderMenu(data);
-      // Populate product prices when the menu loads
+      // Llenar preciosProductos al cargar el menú
       data.categorias.forEach(cat => {
         cat.productos.forEach(prod => {
           const nombreConPrecio = `${cat.nombre} - ${prod.nombre}` + (prod.precio ? ` - $${prod.precio}` : "");
@@ -26,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       generateTimeOptions();
     })
     .catch(err => {
-      console.error("Error loading menu:", err);
+      console.error("Error al cargar menú:", err);
       document.getElementById("menu").innerText = `No se pudo cargar el menú de la sucursal: ${sucursal}. Por favor, revise la ruta del archivo.`;
     });
 
