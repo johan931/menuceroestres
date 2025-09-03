@@ -212,16 +212,32 @@
       "nombre": "Ensaladas",
       "productos": [
         {
-          "nombre": "Pollo",
-          "precio": 80
+          "nombre": "Pollo - Mediana",
+          "precio mediana": 75
         },
         {
-          "nombre": "Atún",
-          "precio": 80
+          "nombre": "Pollo - Grande",
+          "precio mediana": 100
         },
         {
-          "nombre": "Jamón",
-          "precio": 80
+          "nombre": "Atún - Mediana",
+          "precio mediana": 75
+        },
+                {
+          "nombre": "Atún - Grande",
+          "precio mediana": 100
+        },
+        {
+          "nombre": "Jamón - Mediana",
+          "precio mediana": 75
+        },
+        {
+          "nombre": "Jamón - Grande",
+          "precio mediana": 100
+        },
+        {
+          "nombre": "Jamón, Pollo o Atún - Empresalia",
+          "precio mediana": 85
         }
       ]
     },
@@ -249,10 +265,10 @@
       ]
     },
     {
-      "nombre": "Menú del Día",
+      "nombre": "Menú del Día (Empresalia)",
       "productos": [
         {
-          "nombre": "Platillo del día (Milanesa de pollo)",
+          "nombre": "Platillo del día",
           "precio": 85
         }
       ]
@@ -311,7 +327,7 @@
         },
         {
           "nombre": "Jamaica con arándano - Grande",
-          "precio": 40
+          "precio": 45
         },
         {
           "nombre": "Horchata de avena - Chica",
@@ -319,7 +335,7 @@
         },
         {
           "nombre": "Horchata de avena - Grande",
-          "precio": 40
+          "precio": 45
         },
         {
           "nombre": "Horchata de fresa - Chica",
@@ -327,7 +343,7 @@
         },
         {
           "nombre": "Horchata de fresa - Grande",
-          "precio": 40
+          "precio": 45
         },
         {
           "nombre": "Mojito de chía - Chica",
@@ -335,7 +351,7 @@
         },
         {
           "nombre": "Mojito de chía - Grande",
-          "precio": 40
+          "precio": 45
         },
         {
           "nombre": "Detox (guayaba) - Chica",
@@ -343,7 +359,7 @@
         },
         {
           "nombre": "Detox (guayaba) - Grande",
-          "precio": 40
+          "precio": 45
         }
       ]
     },
@@ -358,9 +374,13 @@
           "nombre": "Espresso",
           "precio": 30
         },
+         {
+          "nombre": "Espresso doble",
+          "precio": 35
+        },
         {
           "nombre": "Capuchino Regular",
-          "precio": 43
+          "precio": 45
         },
         {
           "nombre": "Capuchino Cajeta",
@@ -392,11 +412,11 @@
         },
         {
           "nombre": "Latte",
-          "precio": 50
+          "precio": 45
         },
         {
           "nombre": "Té artesanal",
-          "precio": 50
+          "precio": 35
         }
         
       ]
