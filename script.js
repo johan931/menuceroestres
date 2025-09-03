@@ -6,24 +6,21 @@ document.addEventListener("DOMContentLoaded", () => {
   // Capitalizar la primera letra del nombre de la sucursal
   const nombreSucursalCapitalizado = sucursal.charAt(0).toUpperCase() + sucursal.slice(1);
 
-  // Actualizar el título de la página y el encabezado
-  document.title = `CEROESTRES - Menú ${nombreSucursalCapitalizado}`;
-  const tituloEncabezado = document.getElementById('tituloMenu');
-  if (tituloEncabezado) {
-    tituloEncabezado.innerText = `Menú virtual - ${nombreSucursalCapitalizado}`;
+  // Seleccionar y actualizar el título de la página
+  const tituloSucursalElemento = document.getElementById('titulo-sucursal');
+  if (tituloSucursalElemento) {
+    tituloSucursalElemento.innerText = `Menú Virtual - ${nombreSucursalCapitalizado}`;
   }
   
-  fetch(`menu_${sucursal}.json`) // ¡Ruta corregida!
+  fetch(`menu_${sucursal}.json`)
     .then(res => {
-      // Verificar si la respuesta es exitosa (código de estado 200-299)
       if (!res.ok) {
-        throw new Error(`Error HTTP! estado: ${res.status}`);
+        throw new Error(`HTTP error! status: ${res.status}`);
       }
       return res.json();
     })
     .then(data => {
       renderMenu(data);
-      // Llenar preciosProductos al cargar el menú
       data.categorias.forEach(cat => {
         cat.productos.forEach(prod => {
           const nombreConPrecio = `${cat.nombre} - ${prod.nombre}` + (prod.precio ? ` - $${prod.precio}` : "");
