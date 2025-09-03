@@ -431,6 +431,26 @@
         {
           "nombre": "Yogurt con fruta (natural o fresa)",
           "precio": 50
+        },
+        
+        {
+      "nombre": "Postres",
+      "productos": [
+        {
+          "nombre": "Arroz con leche",
+          "precio": 30
+        },
+        {
+          "nombre": "Muffin grande",
+          "precio": 30
+        },
+        {
+          "nombre": "Gelatina de Yogurt",
+          "precio": 30
+        },
+         {
+          "nombre": "Tapioca",
+          "precio": 30
         }
         
       ]
