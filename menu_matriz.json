@@ -234,12 +234,8 @@
         {
           "nombre": "Jamón - Grande",
           "precio": 100
-        },
-        {
-          "nombre": "Jamón, Pollo o Atún - Empresalia",
-          "precio": 85
         }
-      ]
+        ]
     },
     {
       "nombre": "Aderezos (2 gratis, extra $5)",
@@ -264,15 +260,7 @@
         }
       ]
     },
-    {
-      "nombre": "Menú del Día (Empresalia)",
-      "productos": [
-        {
-          "nombre": "Platillo del día",
-          "precio": 85
-        }
-      ]
-    },
+    
     {
       "nombre": "Jugos",
       "productos": [
@@ -322,27 +310,19 @@
       "nombre": "Aguas",
       "productos": [
         {
-          "nombre": "Jamaica con arándano - Chica",
+          "nombre": "Jamaica/arándano - Chica",
           "precio": 25
         },
         {
-          "nombre": "Jamaica con arándano - Grande",
+          "nombre": "Jamaica/arándano - Grande",
           "precio": 45
         },
         {
-          "nombre": "Horchata de avena - Chica",
+          "nombre": "Horchata/avena - Chica",
           "precio": 25
         },
         {
-          "nombre": "Horchata de avena - Grande",
-          "precio": 45
-        },
-        {
-          "nombre": "Horchata de fresa - Chica",
-          "precio": 25
-        },
-        {
-          "nombre": "Horchata de fresa - Grande",
+          "nombre": "Horchata/avena - Grande",
           "precio": 45
         },
         {
@@ -354,11 +334,11 @@
           "precio": 45
         },
         {
-          "nombre": "Detox (guayaba) - Chica",
+          "nombre": "Detox - Chica",
           "precio": 25
         },
         {
-          "nombre": "Detox (guayaba) - Grande",
+          "nombre": "Detox - Grande",
           "precio": 45
         }
       ]
@@ -446,6 +426,10 @@
           "precio": 33
         },
         {
+          "nombre": "Brownie",
+          "precio": 39
+        },
+        {
           "nombre": "Muffin grande",
           "precio": 30
         },
@@ -453,9 +437,25 @@
           "nombre": "Gelatina de Yogurt",
           "precio": 30
         },
+        {
+          "nombre": "Panqué/chabacano",
+          "precio": 25
+        },
+        {
+          "nombre": "Panqué/zanahoria",
+          "precio": 25
+        },
+         {
+          "nombre": "Pay",
+          "precio": 30
+        },
+        {
+          "nombre": "Struddel/manzana",
+          "precio": 35
+        },
          {
           "nombre": "Tapioca",
-          "precio": 30
+          "precio": 33
          }
         ]
       }
