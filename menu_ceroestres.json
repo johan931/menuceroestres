@@ -431,8 +431,9 @@
         {
           "nombre": "Yogurt con fruta (natural o fresa)",
           "precio": 50
-        },
-        
+        }
+      ]
+      },    
         {
       "nombre": "Postres",
       "productos": [
@@ -452,7 +453,7 @@
           "nombre": "Tapioca",
           "precio": 30
         }
-        
+       
       ]
     }
   ]
