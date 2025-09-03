@@ -213,31 +213,31 @@
       "productos": [
         {
           "nombre": "Pollo - Mediana",
-          "precio mediana": 75
+          "precio": 75
         },
         {
           "nombre": "Pollo - Grande",
-          "precio mediana": 100
+          "precio": 100
         },
         {
           "nombre": "Atún - Mediana",
-          "precio mediana": 75
+          "precio": 75
         },
                 {
           "nombre": "Atún - Grande",
-          "precio mediana": 100
+          "precio": 100
         },
         {
           "nombre": "Jamón - Mediana",
-          "precio mediana": 75
+          "precio": 75
         },
         {
           "nombre": "Jamón - Grande",
-          "precio mediana": 100
+          "precio": 100
         },
         {
           "nombre": "Jamón, Pollo o Atún - Empresalia",
-          "precio mediana": 85
+          "precio": 85
         }
       ]
     },
