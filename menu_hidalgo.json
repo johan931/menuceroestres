@@ -1,0 +1,459 @@
+{
+  "nombre_tienda": "CEROESTRES",
+  "categorias": [
+    {
+      "nombre": "Sandwich",
+      "productos": [
+        {
+          "nombre": "Jamón y manchego",
+          "precio": 39
+        },
+        {
+          "nombre": "Jamón y panela",
+          "precio": 60
+        },
+        {
+          "nombre": "Pollo y manchego",
+          "precio": 75
+        },
+        {
+          "nombre": "Atún y panela",
+          "precio": 65
+        },
+        {
+          "nombre": "Salami y manchego",
+          "precio": 65
+        },
+        {
+          "nombre": "Chorizo y manchego",
+          "precio": 70
+        },
+        {
+          "nombre": "Serrano y manchego",
+          "precio": 100
+        },
+        {
+          "nombre": "Salmon y philadelphia",
+          "precio": 115
+        },
+        {
+          "nombre": "Cubano",
+          "precio": 115
+        }
+      ]
+    },
+    {
+      "nombre": "Cuernito",
+      "productos": [
+        {
+          "nombre": "Jamón y manchego",
+          "precio": 65
+        },
+        {
+          "nombre": "Jamón y panela",
+          "precio": 70
+        },
+        {
+          "nombre": "Pollo y manchego",
+          "precio": 85
+        },
+        {
+          "nombre": "Atún y panela",
+          "precio": 75
+        },
+        {
+          "nombre": "Salami y manchego",
+          "precio": 75
+        },
+        {
+          "nombre": "Chorizo y manchego",
+          "precio": 80
+        },
+        {
+          "nombre": "Serrano y manchego",
+          "precio": 105
+        },
+        {
+          "nombre": "Salmon y philadelphia",
+          "precio": 120
+        },
+        {
+          "nombre": "Cubano",
+          "precio": 120
+        }
+      ]
+    },
+
+        {
+      "nombre": "Bagel",
+      "productos": [
+        {
+          "nombre": "Jamón y manchego",
+          "precio": 65
+        },
+        {
+          "nombre": "Jamón y panela",
+          "precio": 70
+        },
+        {
+          "nombre": "Pollo y manchego",
+          "precio": 85
+        },
+        {
+          "nombre": "Atún y panela",
+          "precio": 75
+        },
+        {
+          "nombre": "Salami y manchego",
+          "precio": 75
+        },
+        {
+          "nombre": "Chorizo y manchego",
+          "precio": 80
+        },
+        {
+          "nombre": "Serrano y manchego",
+          "precio": 105
+        },
+        {
+          "nombre": "Salmon y philadelphia",
+          "precio": 120
+        },
+        {
+          "nombre": "Cubano",
+          "precio": 120
+        }
+      ]
+    },
+
+        {
+      "nombre": "Chapata",
+      "productos": [
+        {
+          "nombre": "Jamón y manchego",
+          "precio": 65
+        },
+        {
+          "nombre": "Jamón y panela",
+          "precio": 70
+        },
+        {
+          "nombre": "Pollo y manchego",
+          "precio": 85
+        },
+        {
+          "nombre": "Atún y panela",
+          "precio": 75
+        },
+        {
+          "nombre": "Salami y manchego",
+          "precio": 75
+        },
+        {
+          "nombre": "Chorizo y manchego",
+          "precio": 80
+        },
+        {
+          "nombre": "Serrano y manchego",
+          "precio": 105
+        },
+        {
+          "nombre": "Salmon y philadelphia",
+          "precio": 120
+        },
+        {
+          "nombre": "Cubano",
+          "precio": 120
+        }
+      ]
+    },
+    {
+      "nombre": "Baguette",
+      "productos": [
+        {
+          "nombre": "Jamón y manchego",
+          "precio": 75
+        },
+        {
+          "nombre": "Jamón y panela",
+          "precio": 80
+        },
+        {
+          "nombre": "Pollo y manchego",
+          "precio": 90
+        },
+        {
+          "nombre": "Atún y panela",
+          "precio": 85
+        },
+        {
+          "nombre": "Salami y manchego",
+          "precio": 80
+        },
+        {
+          "nombre": "Chorizo y manchego",
+          "precio": 95
+        },
+        {
+          "nombre": "Serrano y manchego",
+          "precio": 120
+        },
+        {
+          "nombre": "Salmon y philadelphia",
+          "precio": 125
+        },
+        {
+          "nombre": "Cubano",
+          "precio": 125
+        }
+      ]
+    },
+    {
+      "nombre": "Ensaladas",
+      "productos": [
+        {
+          "nombre": "Pollo - Mediana",
+          "precio": 75
+        },
+        {
+          "nombre": "Pollo - Grande",
+          "precio": 100
+        },
+        {
+          "nombre": "Atún - Mediana",
+          "precio": 75
+        },
+                {
+          "nombre": "Atún - Grande",
+          "precio": 100
+        },
+        {
+          "nombre": "Jamón - Mediana",
+          "precio": 75
+        },
+        {
+          "nombre": "Jamón - Grande",
+          "precio": 100
+        },
+        {
+          "nombre": "Jamón, Pollo o Atún - Empresalia",
+          "precio": 85
+        }
+      ]
+    },
+    {
+      "nombre": "Aderezos (2 gratis, extra $5)",
+      "productos": [
+        {
+          "nombre": "Chipotle"
+        },
+        {
+          "nombre": "Ranch"
+        },
+        {
+          "nombre": "Salsa Macha"
+        },
+        {
+          "nombre": "Chiles en Vinagre"
+        },
+        {
+          "nombre": "Aderezo Chipotle"
+        },
+        {
+          "nombre": "Miel mostaza"
+        }
+      ]
+    },
+    {
+      "nombre": "Menú del Día (Empresalia)",
+      "productos": [
+        {
+          "nombre": "Platillo del día",
+          "precio": 85
+        }
+      ]
+    },
+    {
+      "nombre": "Jugos",
+      "productos": [
+        {
+          "nombre": "Naranja - Grande",
+          "precio": 100
+        },
+        {
+          "nombre": "Naranja - Chico",
+          "precio": 55
+        },
+        {
+          "nombre": "Verde - Grande",
+          "precio": 100
+        },
+        {
+          "nombre": "Verde - Chico",
+          "precio": 55
+        },
+        {
+          "nombre": "Zanahoria - Grande",
+          "precio": 100
+        },
+        {
+          "nombre": "Zanahoria - Chico",
+          "precio": 55
+        },
+        {
+          "nombre": "Antigripal - Grande",
+          "precio": 100
+        },
+        {
+          "nombre": "Antigripal - Chico",
+          "precio": 55
+        },
+        {
+          "nombre": "Antioxidante - Grande",
+          "precio": 100
+        },
+        {
+          "nombre": "Antioxidante - Chico",
+          "precio": 55
+        }
+      ]
+    },
+    {
+      "nombre": "Aguas",
+      "productos": [
+        {
+          "nombre": "Jamaica con arándano - Chica",
+          "precio": 25
+        },
+        {
+          "nombre": "Jamaica con arándano - Grande",
+          "precio": 45
+        },
+        {
+          "nombre": "Horchata de avena - Chica",
+          "precio": 25
+        },
+        {
+          "nombre": "Horchata de avena - Grande",
+          "precio": 45
+        },
+        {
+          "nombre": "Horchata de fresa - Chica",
+          "precio": 25
+        },
+        {
+          "nombre": "Horchata de fresa - Grande",
+          "precio": 45
+        },
+        {
+          "nombre": "Mojito de chía - Chica",
+          "precio": 25
+        },
+        {
+          "nombre": "Mojito de chía - Grande",
+          "precio": 45
+        },
+        {
+          "nombre": "Detox (guayaba) - Chica",
+          "precio": 25
+        },
+        {
+          "nombre": "Detox (guayaba) - Grande",
+          "precio": 45
+        }
+      ]
+    },
+    {
+      "nombre": "Cafetería",
+      "productos": [
+        {
+          "nombre": "Americano",
+          "precio": 35
+        },
+        {
+          "nombre": "Espresso",
+          "precio": 30
+        },
+         {
+          "nombre": "Espresso doble",
+          "precio": 35
+        },
+        {
+          "nombre": "Capuchino Regular",
+          "precio": 45
+        },
+        {
+          "nombre": "Capuchino Cajeta",
+          "precio": 50
+        },
+        {
+          "nombre": "Capuchino Vainilla",
+          "precio": 50
+        },
+        {
+          "nombre": "Capuchino Caramel",
+          "precio": 50
+        },
+        {
+          "nombre": "Capuchino Rompope",
+          "precio": 50
+        },
+        {
+          "nombre": "Capuchino Mocca",
+          "precio": 50
+        },
+        {
+          "nombre": "Chocolate",
+          "precio": 50
+        },
+        {
+          "nombre": "Té chai",
+          "precio": 50
+        },
+        {
+          "nombre": "Latte",
+          "precio": 45
+        },
+        {
+          "nombre": "Té artesanal",
+          "precio": 35
+        }
+        
+      ]
+    },
+    {
+      "nombre": "Otros alimentos",
+      "productos": [
+        {
+          "nombre": "Charola de fruta",
+          "precio": 50
+        },
+        {
+          "nombre": "Yogurt con fruta (natural o fresa)",
+          "precio": 50
+        }
+      ]
+    },
+    {
+      "nombre": "Postres",
+      "productos": [
+        {
+          "nombre": "Arroz con leche",
+          "precio": 30
+        },
+        {
+          "nombre": "Muffin grande",
+          "precio": 30
+        },
+        {
+          "nombre": "Gelatina de Yogurt",
+          "precio": 30
+        },
+         {
+          "nombre": "Tapioca",
+          "precio": 30
+         }
+        ]
+      }
+  ]
+}

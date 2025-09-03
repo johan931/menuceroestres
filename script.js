@@ -1,22 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch('menu_ceroestres.json')
-    .then(res => res.json())
+  // Get the branch name from the URL, if it exists
+  const urlParams = new URLSearchParams(window.location.search);
+  const sucursal = urlParams.get('sucursal') || 'matriz'; // Defaults to "matriz" if no parameter is provided
+
+  // Use a precise, absolute path relative to the website's root
+  const menuPath = `menu_${sucursal}.json`;
+
+  fetch(menuPath)
+    .then(res => {
+      // Check if the response is ok (status code 200-299)
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+      return res.json();
+    })
     .then(data => {
       renderMenu(data);
-      // Llenar preciosProductos al cargar el menú
+      // Populate product prices when the menu loads
       data.categorias.forEach(cat => {
         cat.productos.forEach(prod => {
-          // Usar el nombre completo del producto (con o sin precio inicial en el nombre)
-          // para que coincida con la clave usada en 'cantidades'
           const nombreConPrecio = `${cat.nombre} - ${prod.nombre}` + (prod.precio ? ` - $${prod.precio}` : "");
-          preciosProductos[nombreConPrecio] = prod.precio || 0; // Guardar el precio, o 0 si no tiene (como los aderezos)
+          preciosProductos[nombreConPrecio] = prod.precio || 0;
         });
       });
-      generateTimeOptions(); // Llamada a la función para generar opciones de hora
+      generateTimeOptions();
     })
     .catch(err => {
-      console.error("Error al cargar menú:", err);
-      document.getElementById("menu").innerText = "No se pudo cargar el menú.";
+      console.error("Error loading menu:", err);
+      document.getElementById("menu").innerText = `No se pudo cargar el menú de la sucursal: ${sucursal}. Por favor, revise la ruta del archivo.`;
     });
 
   function renderMenu(data) {
@@ -27,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       catDiv.innerHTML = `<h3>${cat.nombre}</h3>`;
 
       cat.productos.forEach(prod => {
-        const nombreCompletoProducto = `${cat.nombre} - ${prod.nombre}` + (prod.precio ? ` - $${prod.precio}` : "");
+        const nombreConPrecio = `${cat.nombre} - ${prod.nombre}` + (prod.precio ? ` - $${prod.precio}` : "");
         const textoVisibleProducto = `${prod.nombre}` + (prod.precio ? ` - $${prod.precio}` : "");
 
         const prodDiv = document.createElement("div");
@@ -35,9 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
         prodDiv.innerHTML = `
           <span>${textoVisibleProducto}</span>
           <div>
-            <button onclick="updateCantidad('${nombreCompletoProducto.replace(/'/g, "\\'")}', -1)">-</button>
-            <span id="qty-${nombreCompletoProducto.replace(/'/g, "\\'")}">0</span>
-            <button onclick="updateCantidad('${nombreCompletoProducto.replace(/'/g, "\\'")}', 1)">+</button>
+            <button onclick="updateCantidad('${nombreConPrecio.replace(/'/g, "\\'")}', -1)">-</button>
+            <span id="qty-${nombreConPrecio.replace(/'/g, "\\'")}">0</span>
+            <button onclick="updateCantidad('${nombreConPrecio.replace(/'/g, "\\'")}', 1)">+</button>
           </div>
         `;
         catDiv.appendChild(prodDiv);
@@ -46,60 +57,10 @@ document.addEventListener("DOMContentLoaded", () => {
       menuDiv.appendChild(catDiv);
     });
   }
-
-  // --- FUNCIÓN PARA GENERAR LAS OPCIONES DE HORA ---
-  function generateTimeOptions() {
-    const horaSelect = document.getElementById('horaSelect');
-    const minutoSelect = document.getElementById('minutoSelect');
-
-    horaSelect.innerHTML = '';
-    minutoSelect.innerHTML = '';
-
-    const defaultOptionHora = document.createElement('option');
-    defaultOptionHora.value = '';
-    defaultOptionHora.textContent = 'Hora';
-    defaultOptionHora.disabled = true;
-    defaultOptionHora.selected = true;
-    horaSelect.appendChild(defaultOptionHora);
-
-    const defaultOptionMinuto = document.createElement('option');
-    defaultOptionMinuto.value = '';
-    defaultOptionMinuto.textContent = 'Minuto';
-    defaultOptionMinuto.disabled = true;
-    defaultOptionMinuto.selected = true;
-    minutoSelect.appendChild(defaultOptionMinuto);
-
-    for (let h = 7; h <= 16; h++) { // 7 AM a 4 PM (16:00)
-      const hourOption = document.createElement('option');
-      let displayHour = h;
-      let ampm = 'AM';
-
-      if (h === 12) {
-        ampm = 'PM';
-      } else if (h > 12) {
-        displayHour = h - 12;
-        ampm = 'PM';
-      }
-
-      const hourValue = String(h).padStart(2, '0'); // Formato HH (ej. 07, 08, 16)
-      hourOption.value = hourValue;
-      hourOption.textContent = `${displayHour}:00 ${ampm}`; // Texto visible (ej. 7:00 AM, 4:00 PM)
-
-      horaSelect.appendChild(hourOption);
-    }
-
-    for (let m = 0; m < 60; m += 15) {
-      const minuteOption = document.createElement('option');
-      const minuteValue = String(m).padStart(2, '0'); // Formato MM (ej. 00, 15, 30, 45)
-      minuteOption.value = minuteValue;
-      minuteOption.textContent = minuteValue;
-      minutoSelect.appendChild(minuteOption);
-    }
-  }
-}); // Cierre de DOMContentLoaded
+});
 
 const cantidades = {};
-const preciosProductos = {}; // Objeto para almacenar los precios de los productos.
+const preciosProductos = {};
 
 function updateCantidad(nombre, delta) {
   if (!(nombre in cantidades)) cantidades[nombre] = 0;
@@ -122,20 +83,15 @@ function updateResumen() {
   let cantidadEntrepansOEnsaladas = 0;
   const aderezosPedidos = [];
 
-  // Definir las categorías que cuentan como "entrepans"
   const categoriasEntrepans = ["Sandwich", "Cuernito", "Bagel", "Chapata", "Baguette"];
 
-  // Primero, procesar todos los productos para identificar y separar aderezos
   seleccionados.forEach(([prod, cant]) => {
-    // Si el nombre del producto comienza con "Aderezos (2 gratis, extra $5)"
     if (prod.startsWith("Aderezos (2 gratis, extra $5)")) {
       aderezosPedidos.push({ nombre: prod, cantidad: cant });
     } else {
-      // Identificar si es un "entrepan" o "ensalada" para contar los productos principales
-      // Ahora verificamos si la categoría del producto está en nuestra lista de entrepans o es una ensalada
-      const categoriaProducto = prod.split(' - ')[0]; // Obtener solo la primera parte del nombre completo
+      const categoriaProducto = prod.split(' - ')[0];
       if (categoriasEntrepans.includes(categoriaProducto) || categoriaProducto === "Ensaladas") {
-        cantidadEntrepansOEnsaladas += cant; // Suma la cantidad de este tipo de producto
+        cantidadEntrepansOEnsaladas += cant;
       }
       const precioUnitario = preciosProductos[prod] || 0;
       const subtotal = precioUnitario * cant;
@@ -144,7 +100,6 @@ function updateResumen() {
     }
   });
 
-  // Procesar los aderezos una vez que sabemos la cantidad de ítems principales
   if (aderezosPedidos.length > 0) {
     const aderezosGratisPermitidos = cantidadEntrepansOEnsaladas * 2;
     let totalAderezosSeleccionados = 0;
@@ -153,12 +108,11 @@ function updateResumen() {
     });
 
     let aderezosACobrar = Math.max(0, totalAderezosSeleccionados - aderezosGratisPermitidos);
-    let costoAderezos = aderezosACobrar * 5; // $5 extra por cada uno
-    totalPedido += costoAderezos; // Sumar el costo de los aderezos al total del pedido
+    let costoAderezos = aderezosACobrar * 5;
+    totalPedido += costoAderezos;
 
     html += `<li><h4>Aderezos:</h4><ul>`;
     aderezosPedidos.forEach(aderezo => {
-      // Eliminar la parte de la categoría del nombre del aderezo para una visualización más limpia
       html += `<li>${aderezo.nombre.replace('Aderezos (2 gratis, extra $5) - ', '')}: ${aderezo.cantidad}</li>`;
     });
     html += `</ul>`;
@@ -175,6 +129,56 @@ function updateResumen() {
 
   html += `</ul><h4>Total del pedido: $${totalPedido}</h4>`;
   resumen.innerHTML = html;
+}
+
+// --- FUNCIÓN PARA GENERAR LAS OPCIONES DE HORA ---
+function generateTimeOptions() {
+  const horaSelect = document.getElementById('horaSelect');
+  const minutoSelect = document.getElementById('minutoSelect');
+
+  horaSelect.innerHTML = '';
+  minutoSelect.innerHTML = '';
+
+  const defaultOptionHora = document.createElement('option');
+  defaultOptionHora.value = '';
+  defaultOptionHora.textContent = 'Hora';
+  defaultOptionHora.disabled = true;
+  defaultOptionHora.selected = true;
+  horaSelect.appendChild(defaultOptionHora);
+
+  const defaultOptionMinuto = document.createElement('option');
+  defaultOptionMinuto.value = '';
+  defaultOptionMinuto.textContent = 'Minuto';
+  defaultOptionMinuto.disabled = true;
+  defaultOptionMinuto.selected = true;
+  minutoSelect.appendChild(defaultOptionMinuto);
+
+  for (let h = 7; h <= 16; h++) {
+    const hourOption = document.createElement('option');
+    let displayHour = h;
+    let ampm = 'AM';
+
+    if (h === 12) {
+      ampm = 'PM';
+    } else if (h > 12) {
+      displayHour = h - 12;
+      ampm = 'PM';
+    }
+
+    const hourValue = String(h).padStart(2, '0');
+    hourOption.value = hourValue;
+    hourOption.textContent = `${displayHour}:00 ${ampm}`;
+
+    horaSelect.appendChild(hourOption);
+  }
+
+  for (let m = 0; m < 60; m += 15) {
+    const minuteOption = document.createElement('option');
+    const minuteValue = String(m).padStart(2, '0');
+    minuteOption.value = minuteValue;
+    minuteOption.textContent = minuteValue;
+    minutoSelect.appendChild(minuteOption);
+  }
 }
 
 document.getElementById("pedidoForm").addEventListener("submit", function (e) {

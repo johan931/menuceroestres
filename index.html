@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF="8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CEROESTRES - Menú</title>
+  <title>CEROESTRES - Escoge sucursal</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos específicos para la página de inicio */
+    body {
+      text-align: center;
+      padding-top: 50px;
+    }
+    .sucursal-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 30px;
+      align-items: center;
+    }
+    .sucursal-btn {
+      padding: 15px 40px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #fff;
+      background-color: #2c3e50;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .sucursal-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
+  </style>
 </head>
 <body>
   <header>
     <img src="logo.png" alt="CEROESTRES Logo" id="logo">
-    <h1>Menú Virtual</h1>
+    <h1>¿Es qué sucursal te encuentras?</h1>
   </header>
 
   <main>
-    <div id="menu" class="menu-container"></div>
-
-    <form id="pedidoForm">
-      <h2>Tu pedido</h2>
-      <label for="nombre">Nombre:</label><br/>
-      <input type="text" id="nombre" required><br/><br/>
-
-      <div class="form-group">
-          <label for="horaSelect">Hora estimada de recogida:</label>
-          <div style="display: flex; gap: 10px;">
-              <select id="horaSelect" name="hora" required>
-                  </select>
-              <select id="minutoSelect" name="minuto" required>
-                  </select>
-          </div>
-      </div>
-      <br/>
-
-      <label for="comprobante">Comprobante de pago (opcional):</label><br/>
-      <input type="file" id="comprobante"><br/><br/>
-
-      <div id="resumenPedido"></div>
-
-      <button type="submit">Enviar pedido</button>
-    </form>
+    <div class="sucursal-container">
+      <a href="menu.html?sucursal=matriz" class="sucursal-btn">Matriz</a>
+      <a href="menu.html?sucursal=juriquilla" class="sucursal-btn">Juriquilla</a>
+      <a href="menu.html?sucursal=scotiabank" class="sucursal-btn">Scotiabank</a>
+      <a href="menu.html?sucursal=hidalgo" class="sucursal-btn">Hidalgo</a>
+      <a href="menu.html?sucursal=empresalia" class="sucursal-btn">Empresalia</a>
+      <a href="menu.html?sucursal=minitoy" class="sucursal-btn">Minitoy</a>
+    </div>
   </main>
-
-  <script src="script.js"></script>
 </body>
 </html>
