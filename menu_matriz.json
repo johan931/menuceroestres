@@ -209,7 +209,7 @@
       ]
     },
     {
-      "nombre": "Ensaladas",
+      "nombre": "Ensaladas y frutas",
       "productos": [
         {
           "nombre": "Pollo - Md",
@@ -234,6 +234,14 @@
         {
           "nombre": "Jamón - Gr",
           "precio": 100
+        },
+        {
+          "nombre": "Charola de fruta",
+          "precio": 50
+        },
+        {
+          "nombre": "Yogurt con fruta",
+          "precio": 50
         }
         ]
     },
@@ -399,19 +407,6 @@
           "precio": 35
         }
         
-      ]
-    },
-    {
-      "nombre": "Otros alimentos",
-      "productos": [
-        {
-          "nombre": "Charola de fruta",
-          "precio": 50
-        },
-        {
-          "nombre": "Yogurt con fruta",
-          "precio": 50
-        }
       ]
     },
     {
