@@ -50,3 +50,17 @@ button[type="submit"] {
   cursor: pointer;
   margin-top: 15px;
 }
+/* Estilos para el eslogan en la página de inicio */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre el contenedor del logo y el título de sucursal */
+}
+
+.eslogan {
+    font-size: 1em; /* Un tamaño de letra más pequeño que el título principal */
+    color: #666; /* Un color más suave para el eslogan */
+    margin-top: 5px; /* Espacio mínimo entre el logo y el eslogan */
+    margin-bottom: 0;
+}
