@@ -200,8 +200,9 @@ document.getElementById("pedidoForm").addEventListener("submit", function (e) {
   }
 
   console.log("Pedido:", { nombre, hora: horaCompleta, productos, comprobante });
-  alert("Servicio no habilitado. Muy pronto estrá disponible :)");
+  alert("Servicio no habilitado. Muy pronto estará disponible :)");
 });
+
 
 
 
