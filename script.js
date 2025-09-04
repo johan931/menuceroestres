@@ -131,7 +131,7 @@ function updateResumen() {
     html += `</li>`;
   }
 
-  html += `</ul><h3>Total del pedido: $${totalPedido}</h3>`;
+  html += `</ul><h3>Total: $${totalPedido}</h3>`;
   resumen.innerHTML = html;
 }
 
@@ -202,4 +202,5 @@ document.getElementById("pedidoForm").addEventListener("submit", function (e) {
   console.log("Pedido:", { nombre, hora: horaCompleta, productos, comprobante });
   alert("Pedido enviado a cocina :)");
 });
+
 
