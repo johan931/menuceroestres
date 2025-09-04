@@ -13,17 +13,7 @@ header {
   height: auto;
   display: block; /* Ayuda a controlar el margen en algunas situaciones */
   margin: 0 auto; /* Centra el logo y elimina márgenes superiores/inferiores */
-}
-
-/* Contenedor del logo y el eslogan */
-.logo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Ajusta este margen si el espacio lo ves excesivo DESPUÉS de ajustar el logo */
-    margin-bottom: 1000px; /* Reduje este valor, antes era 20px */
-    margin-top: 1000px; /* Puedes añadir o ajustar este también si el header tiene mucho espacio arriba */
-    padding: 0; /* Asegura que no haya padding interno en el contenedor */
+  padding: 0;
 }
 
 h1, h2 {
@@ -79,6 +69,7 @@ button[type="submit"] {
     margin-top: 5px; /* Espacio mínimo entre el logo y el eslogan */
     margin-bottom: 0;
 }
+
 
 
 
