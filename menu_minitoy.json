@@ -2,238 +2,37 @@
   "nombre_tienda": "CEROESTRES",
   "categorias": [
     {
-      "nombre": "Sandwich",
+      "nombre": "Tortas",
       "productos": [
         {
-          "nombre": "Jamón y manchego",
-          "precio": 39
+          "nombre": "Jamón",
+          "precio": 45
         },
         {
-          "nombre": "Jamón y panela",
-          "precio": 60
+          "nombre": "Salchicha",
+          "precio": 45
         },
         {
-          "nombre": "Pollo y manchego",
-          "precio": 75
-        },
-        {
-          "nombre": "Atún y panela",
+          "nombre": "Milanesa",
           "precio": 65
-        },
-        {
-          "nombre": "Salami y manchego",
-          "precio": 65
-        },
-        {
-          "nombre": "Chorizo y manchego",
-          "precio": 70
-        },
-        {
-          "nombre": "Serrano y manchego",
-          "precio": 100
-        },
-        {
-          "nombre": "Salmón y philadelphia",
-          "precio": 115
-        },
-        {
-          "nombre": "Cubano",
-          "precio": 115
         }
       ]
     },
-    {
-      "nombre": "Cuernito",
-      "productos": [
-        {
-          "nombre": "Jamón y manchego",
-          "precio": 65
-        },
-        {
-          "nombre": "Jamón y panela",
-          "precio": 70
-        },
-        {
-          "nombre": "Pollo y manchego",
-          "precio": 85
-        },
-        {
-          "nombre": "Atún y panela",
-          "precio": 75
-        },
-        {
-          "nombre": "Salami y manchego",
-          "precio": 75
-        },
-        {
-          "nombre": "Chorizo y manchego",
-          "precio": 80
-        },
-        {
-          "nombre": "Serrano y manchego",
-          "precio": 105
-        },
-        {
-          "nombre": "Salmón y philadelphia",
-          "precio": 120
-        },
-        {
-          "nombre": "Cubano",
-          "precio": 120
-        }
-      ]
-    },
-
-        {
-      "nombre": "Bagel",
-      "productos": [
-        {
-          "nombre": "Jamón y manchego",
-          "precio": 65
-        },
-        {
-          "nombre": "Jamón y panela",
-          "precio": 70
-        },
-        {
-          "nombre": "Pollo y manchego",
-          "precio": 85
-        },
-        {
-          "nombre": "Atún y panela",
-          "precio": 75
-        },
-        {
-          "nombre": "Salami y manchego",
-          "precio": 75
-        },
-        {
-          "nombre": "Chorizo y manchego",
-          "precio": 80
-        },
-        {
-          "nombre": "Serrano y manchego",
-          "precio": 105
-        },
-        {
-          "nombre": "Salmón y philadelphia",
-          "precio": 120
-        },
-        {
-          "nombre": "Cubano",
-          "precio": 120
-        }
-      ]
-    },
-
-        {
-      "nombre": "Chapata",
-      "productos": [
-        {
-          "nombre": "Jamón y manchego",
-          "precio": 65
-        },
-        {
-          "nombre": "Jamón y panela",
-          "precio": 70
-        },
-        {
-          "nombre": "Pollo y manchego",
-          "precio": 85
-        },
-        {
-          "nombre": "Atún y panela",
-          "precio": 75
-        },
-        {
-          "nombre": "Salami y manchego",
-          "precio": 75
-        },
-        {
-          "nombre": "Chorizo y manchego",
-          "precio": 80
-        },
-        {
-          "nombre": "Serrano y manchego",
-          "precio": 105
-        },
-        {
-          "nombre": "Salmón y philadelphia",
-          "precio": 120
-        },
-        {
-          "nombre": "Cubano",
-          "precio": 120
-        }
-      ]
-    },
-    {
-      "nombre": "Baguette",
-      "productos": [
-        {
-          "nombre": "Jamón y manchego",
-          "precio": 75
-        },
-        {
-          "nombre": "Jamón y panela",
-          "precio": 80
-        },
-        {
-          "nombre": "Pollo y manchego",
-          "precio": 90
-        },
-        {
-          "nombre": "Atún y panela",
-          "precio": 85
-        },
-        {
-          "nombre": "Salami y manchego",
-          "precio": 80
-        },
-        {
-          "nombre": "Chorizo y manchego",
-          "precio": 95
-        },
-        {
-          "nombre": "Serrano y manchego",
-          "precio": 120
-        },
-        {
-          "nombre": "Salmón y philadelphia",
-          "precio": 125
-        },
-        {
-          "nombre": "Cubano",
-          "precio": 125
-        }
-      ]
-    },
+    
     {
       "nombre": "Ensaladas y frutas",
       "productos": [
         {
-          "nombre": "Pollo - Md",
-          "precio": 75
+          "nombre": "Pollo",
+          "precio": 85
         },
         {
-          "nombre": "Pollo - Gr",
-          "precio": 100
+          "nombre": "Atún",
+          "precio": 85
         },
         {
-          "nombre": "Atún - Md",
-          "precio": 75
-        },
-                {
-          "nombre": "Atún - Gr",
-          "precio": 100
-        },
-        {
-          "nombre": "Jamón - Md",
-          "precio": 75
-        },
-        {
-          "nombre": "Jamón - Gr",
-          "precio": 100
+          "nombre": "Jamón",
+          "precio": 85
         },
         {
           "nombre": "Charola de fruta",
@@ -241,6 +40,10 @@
         },
         {
           "nombre": "Yogurt con fruta",
+          "precio": 50
+        },
+        {
+          "nombre": "Zanahoria rayada",
           "precio": 50
         }
         ]
@@ -268,6 +71,20 @@
         }
       ]
     },
+
+        {
+      "nombre": "Menú Minitoy",
+      "productos": [
+        {
+          "nombre": "Oishi",
+          "precio": 65
+        },
+        {
+          "nombre": "Sushi",
+          "precio": 95
+        }
+      ]
+    },
     
     {
       "nombre": "Jugos",
@@ -277,40 +94,16 @@
           "precio": 55
         },
         {
-          "nombre": "Naranja - Gr",
-          "precio": 100
-        },
-        {
           "nombre": "Verde - Ch",
           "precio": 55
-        },
-        {
-          "nombre": "Verde - Gr",
-          "precio": 100
-        },
-        {
-          "nombre": "Zanahoria - Ch",
-          "precio": 55
-        },
-        {
-          "nombre": "Zanahoria - Gr",
-          "precio": 100
         },
         {
           "nombre": "Antigripal - Ch",
           "precio": 55
         },
         {
-          "nombre": "Antigripal - Gr",
-          "precio": 100
-        },
-        {
           "nombre": "Antioxidante - Ch",
           "precio": 55
-        },
-        {
-          "nombre": "Antioxidante - Gr",
-          "precio": 100
         }
       ]
     },
@@ -399,6 +192,10 @@
           "precio": 50
         },
         {
+          "nombre": "Té matcha",
+          "precio": 45
+        },
+        {
           "nombre": "Latte",
           "precio": 45
         },
@@ -415,6 +212,10 @@
         {
           "nombre": "Arroz con leche",
           "precio": 33
+        },
+        {
+          "nombre": "Carlota",
+          "precio": 25
         },
         {
           "nombre": "Jericalla",
@@ -439,6 +240,10 @@
         {
           "nombre": "Panqué/zanahoria",
           "precio": 25
+        },
+        {
+          "nombre": "Pastel",
+          "precio": 55
         },
          {
           "nombre": "Pay",
