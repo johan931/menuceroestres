@@ -389,6 +389,10 @@
           "precio": 50
         },
         {
+          "nombre": "Té matcha",
+          "precio": 45
+        },
+        {
           "nombre": "Latte",
           "precio": 45
         },
@@ -405,6 +409,10 @@
         {
           "nombre": "Arroz con leche",
           "precio": 33
+        },
+        {
+          "nombre": "Carlota",
+          "precio": 25
         },
         {
           "nombre": "Jericalla",
