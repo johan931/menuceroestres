@@ -87,14 +87,14 @@ function updateResumen() {
   let cantidadEntrepansOEnsaladas = 0;
   const aderezosPedidos = [];
 
-  const categoriasEntrepans = ["Sandwich", "Cuernito", "Bagel", "Chapata", "Baguette","Tortas"];
+  const categoriasEntrepans = ["Sandwich", "Cuernito", "Bagel", "Chapata", "Baguette", "Torta"];
 
   seleccionados.forEach(([prod, cant]) => {
     if (prod.startsWith("Aderezos (2 gratis, extra $5)")) {
       aderezosPedidos.push({ nombre: prod, cantidad: cant });
     } else {
       const categoriaProducto = prod.split(' - ')[0];
-      if (categoriasEntrepans.includes(categoriaProducto) || categoriaProducto === "Ensaladas") {
+      if (categoriasEntrepans.includes(categoriaProducto) || categoriaProducto === "Ensaladas y frutas") {
         cantidadEntrepansOEnsaladas += cant;
       }
       const precioUnitario = preciosProductos[prod] || 0;
@@ -200,8 +200,9 @@ document.getElementById("pedidoForm").addEventListener("submit", function (e) {
   }
 
   console.log("Pedido:", { nombre, hora: horaCompleta, productos, comprobante });
-  alert("Pedido enviado a cocina :)");
+  alert("Servicio no habilitado. Muy pronto estrá disponible :)");
 });
+
 
 
 
