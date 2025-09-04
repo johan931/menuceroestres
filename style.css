@@ -16,6 +16,16 @@ header {
   padding: 0;
 }
 
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Ajusta estos márgenes para controlar el espacio entre el logo y otros elementos */
+    margin-bottom: 100px; /* Espacio entre el contenedor del logo y el título de sucursal */
+    margin-top: 100px; /* Espacio entre el logo y la parte superior del header */
+    padding: 0; /* Asegura que no haya padding interno en el contenedor */
+}
+
 h1, h2 {
   color: #333;
 }
@@ -69,6 +79,7 @@ button[type="submit"] {
     margin-top: 5px; /* Espacio mínimo entre el logo y el eslogan */
     margin-bottom: 0;
 }
+
 
 
 
