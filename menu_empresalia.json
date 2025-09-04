@@ -256,6 +256,32 @@
         }
       ]
     },
+
+        {
+      "nombre": "Menú Empresalia",
+      "productos": [
+        {
+          "nombre": "Menú del día",
+          "precio": 85
+        },
+        {
+          "nombre": "Hot-dog (viernes)",
+          "precio": 40
+        },
+        {
+          "nombre": "Burrito (viernes)",
+          "precio": 40
+        },
+        {
+          "nombre": "Oishi",
+          "precio": 65
+        },
+        {
+          "nombre": "Sushi",
+          "precio": 95
+        }
+      ]
+    },
     
     {
       "nombre": "Jugos",
