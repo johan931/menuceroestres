@@ -212,28 +212,16 @@
       "nombre": "Ensaladas y frutas",
       "productos": [
         {
-          "nombre": "Pollo - Md",
-          "precio": 75
+          "nombre": "Pollo",
+          "precio": 85
         },
         {
-          "nombre": "Pollo - Gr",
-          "precio": 100
+          "nombre": "Atún",
+          "precio": 85
         },
         {
-          "nombre": "Atún - Md",
-          "precio": 75
-        },
-                {
-          "nombre": "Atún - Gr",
-          "precio": 100
-        },
-        {
-          "nombre": "Jamón - Md",
-          "precio": 75
-        },
-        {
-          "nombre": "Jamón - Gr",
-          "precio": 100
+          "nombre": "Jamón",
+          "precio": 85
         },
         {
           "nombre": "Charola de fruta",
@@ -277,40 +265,16 @@
           "precio": 55
         },
         {
-          "nombre": "Naranja - Gr",
-          "precio": 100
-        },
-        {
           "nombre": "Verde - Ch",
           "precio": 55
-        },
-        {
-          "nombre": "Verde - Gr",
-          "precio": 100
-        },
-        {
-          "nombre": "Zanahoria - Ch",
-          "precio": 55
-        },
-        {
-          "nombre": "Zanahoria - Gr",
-          "precio": 100
         },
         {
           "nombre": "Antigripal - Ch",
           "precio": 55
         },
         {
-          "nombre": "Antigripal - Gr",
-          "precio": 100
-        },
-        {
           "nombre": "Antioxidante - Ch",
           "precio": 55
-        },
-        {
-          "nombre": "Antioxidante - Gr",
-          "precio": 100
         }
       ]
     },
