@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Seleccionar y actualizar el título de la página
   const tituloSucursalElemento = document.getElementById('titulo-sucursal');
   if (tituloSucursalElemento) {
-    tituloSucursalElemento.innerText = `Menú Virtual - ${nombreSucursalCapitalizado}`;
+    tituloSucursalElemento.innerText = `Nuesto menú - ${nombreSucursalCapitalizado}`;
   }
   
   fetch(`menu_${sucursal}.json`)
