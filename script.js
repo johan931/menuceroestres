@@ -87,7 +87,7 @@ function updateResumen() {
   let cantidadEntrepansOEnsaladas = 0;
   const aderezosPedidos = [];
 
-  const categoriasEntrepans = ["Sandwich", "Cuernito", "Bagel", "Chapata", "Baguette"];
+  const categoriasEntrepans = ["Sandwich", "Cuernito", "Bagel", "Chapata", "Baguette","Tortas"];
 
   seleccionados.forEach(([prod, cant]) => {
     if (prod.startsWith("Aderezos (2 gratis, extra $5)")) {
@@ -202,5 +202,6 @@ document.getElementById("pedidoForm").addEventListener("submit", function (e) {
   console.log("Pedido:", { nombre, hora: horaCompleta, productos, comprobante });
   alert("Pedido enviado a cocina :)");
 });
+
 
 
