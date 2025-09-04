@@ -9,9 +9,12 @@ header {
   padding: 20px 0;
 }
 #logo {
-  width: 480px;
+  width: 480px; /* O el tamaño que desees */
   height: auto;
+  display: block; /* Ayuda a controlar el margen en algunas situaciones */
+  margin: 0 auto; /* Centra el logo y elimina márgenes superiores/inferiores */
 }
+
 h1, h2 {
   color: #333;
 }
@@ -65,4 +68,5 @@ button[type="submit"] {
     margin-top: 5px; /* Espacio mínimo entre el logo y el eslogan */
     margin-bottom: 0;
 }
+
 
