@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Seleccionar y actualizar el título de la página
   const tituloSucursalElemento = document.getElementById('titulo-sucursal');
   if (tituloSucursalElemento) {
-    tituloSucursalElemento.innerText = `Nuesto menú - ${nombreSucursalCapitalizado}`;
+    tituloSucursalElemento.innerText = `Nuestro menú - ${nombreSucursalCapitalizado}`;
   }
   
   fetch(`menu_${sucursal}.json`)
@@ -202,6 +202,7 @@ document.getElementById("pedidoForm").addEventListener("submit", function (e) {
   console.log("Pedido:", { nombre, hora: horaCompleta, productos, comprobante });
   alert("Servicio no habilitado. Muy pronto estrá disponible :)");
 });
+
 
 
 
