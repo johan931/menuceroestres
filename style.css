@@ -9,7 +9,8 @@ header {
   padding: 20px 0;
 }
 #logo {
-  width: 240px;
+  width: 480px;
+  height: auto;
 }
 h1, h2 {
   color: #333;
@@ -64,3 +65,4 @@ button[type="submit"] {
     margin-top: 5px; /* Espacio mínimo entre el logo y el eslogan */
     margin-bottom: 0;
 }
+
