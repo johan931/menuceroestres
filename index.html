@@ -1,117 +1,66 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CEROESTRES - Inicio</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    /* Estilos específicos para la página de inicio */
-    body {
-      text-align: center;
-      padding-top: 50px;
-    }
-    .sucursal-container {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 15px;
-      margin-bottom: 50px;
-      align-items: center;
-    }
-    .sucursal-btn {
-      padding: 15px 40px;
-      font-size: 1.2em;
-      font-weight: bold;
-      color: #fff;
-      background-color: #2c3e50;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      text-decoration: none;
-      width: 250px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .sucursal-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-    }
-    /* Estilos para el contenedor del logo y el eslogan */
-    .logo-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CEROESTRES - Inicio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos específicos para la página de inicio */
+    body {
+      text-align: center;
+      padding-top: 50px;
     }
-    .eslogan {
-        font-size: 1em;
-        color: #666;
-        margin-top: 5px;
-        margin-bottom: 0;
+    .sucursal-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 15px;
+      margin-bottom: 50px;
+      align-items: center;
     }
-  </style>
+    .sucursal-btn {
+      padding: 15px 40px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #fff;
+      background-color: #2c3e50;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .sucursal-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="logo-container">
-      <img src="logo.svg" alt="CEROESTRES Logo" id="logo">
-      <h2 class="eslogan">¡Frescos jugos y chabochas baguettes!</h2>
-    </div>
-    <h1>¿En qué sucursal te encuentras?</h1>
-  </header>
-
-  <main>
-    <div class="sucursal-container">
-      <a href="menu.html?sucursal=matriz" class="sucursal-btn">Matriz</a>
-      <a href="menu.html?sucursal=juriquilla" class="sucursal-btn">Juriquilla</a>
-      <a href="menu.html?sucursal=scotiabank" class="sucursal-btn">Scotiabank</a>
-      <a href="menu.html?sucursal=hidalgo" class="sucursal-btn">Hidalgo</a>
-      <a href="menu.html?sucursal=empresalia" class="sucursal-btn">Empresalia</a>
-      <a href="menu.html?sucursal=minitoy" class="sucursal-btn">Minitoy</a>
-    </div>
-
-    <div class="bank-details-box">
-        <h3>Pago por transferencia</h3>
-        <p><strong>Clabe:</strong> <span id="clabe">014680605582520712</span> <button class="copy-btn" data-target="clabe">Copiar</button></p>
-        <p><strong>Cuenta:</strong> <span id="cuenta">60558252071</span> <button class="copy-btn" data-target="cuenta">Copiar</button></p>
-        <p><strong>Nombre:</strong> <span>Yecssi Paulina Razo Castillo</span></p>
-        <p><strong>Banco:</strong> <span>Santander</span></p>
+  <header>
+    <div class="logo-container">
+      <img src="logo.svg" alt="CEROESTRES Logo" id="logo">
+      <h2 class="eslogan">¡Frescos jugos y chabochas baguettes!</h2>
     </div>
-  </main>
+    </div>
+    </div>
+    <h1>¿En qué sucursal te encuentras?</h1>
+  </header>
+
+  <main>
+    <div class="sucursal-container">
+      <a href="menu.html?sucursal=matriz" class="sucursal-btn">Matriz</a>
+      <a href="menu.html?sucursal=juriquilla" class="sucursal-btn">Juriquilla</a>
+      <a href="menu.html?sucursal=scotiabank" class="sucursal-btn">Scotiabank</a>
+      <a href="menu.html?sucursal=hidalgo" class="sucursal-btn">Hidalgo</a>
+      <a href="menu.html?sucursal=empresalia" class="sucursal-btn">Empresalia</a>
+      <a href="menu.html?sucursal=minitoy" class="sucursal-btn">Minitoy</a>
+    </div>
+    
+  </main>
 </body>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const copyButtons = document.querySelectorAll('.copy-btn');
-        copyButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const targetId = this.getAttribute('data-target');
-                const targetElement = document.getElementById(targetId);
-                
-                if (targetElement) {
-                    const textToCopy = targetElement.innerText;
-                    navigator.clipboard.writeText(textToCopy).then(function() {
-                        alert('¡Copiado al portapapeles!');
-                    }).catch(function(err) {
-                        console.error('Error al copiar el texto: ', err);
-                        alert('Error al copiar. Por favor, copia manualmente.');
-                    });
-                }
-            });
-        });
-    });
-</script>
-
 </html>
-
-
-
-
-
-
-
-
-
-
