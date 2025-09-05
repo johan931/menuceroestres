@@ -103,18 +103,6 @@ button[type="submit"] {
 .copy-btn:hover {
     background-color: #34495e;
 }
-/* Estilos para los botones de copiar en pantallas pequeñas */
-@media (max-width: 600px) {
-  .bank-details-box p {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: flex-start;
-  }
-  .copy-btn {
-    width: 100%;
-    margin-top: 5px;
-    float: none;
-  }
-}
+
+
 
