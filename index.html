@@ -71,6 +71,29 @@
   </main>
 </body>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const copyButtons = document.querySelectorAll('.copy-btn');
+        copyButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    const textToCopy = targetElement.innerText;
+                    navigator.clipboard.writeText(textToCopy).then(function() {
+                        alert('¡Copiado al portapapeles!');
+                    }).catch(function(err) {
+                        console.error('Error al copiar el texto: ', err);
+                        alert('Error al copiar. Por favor, copia manualmente.');
+                    });
+                }
+            });
+        });
+    });
+</script>
+
 
 </html>
+
 
