@@ -66,7 +66,7 @@ button[type="submit"] {
     margin-bottom: 0;
 }
 
-/* Modificación
+/* MODIFICACIÓN PARA EL RECUADRO DE TRANSFERENCIAS:
 /* Estilos para el recuadro de datos bancarios */
 .bank-details-box {
     background-color: #f8f8f8;
@@ -103,3 +103,18 @@ button[type="submit"] {
 .copy-btn:hover {
     background-color: #34495e;
 }
+/* Estilos para los botones de copiar en pantallas pequeñas */
+@media (max-width: 600px) {
+  .bank-details-box p {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+  .copy-btn {
+    width: 100%;
+    margin-top: 5px;
+    float: none;
+  }
+}
+
