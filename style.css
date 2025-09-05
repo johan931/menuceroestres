@@ -104,5 +104,13 @@ button[type="submit"] {
     background-color: #34495e;
 }
 
+/* Estilos para el pie de página */
+.footer {
+  margin-top: 50px; /* Espacio para separar del contenido principal */
+  margin-bottom: 20px;
+  font-size: 0.8em; /* Tamaño de letra más pequeño */
+  color: #999; /* Un color gris claro para que no resalte demasiado */
+  text-align: center; /* Centrar el texto */
+}
 
 
