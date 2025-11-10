@@ -274,43 +274,43 @@
       "productos": [
         {
           "nombre": "Naranja - Ch",
-          "precio": 55
+          "precio": 45
         },
         {
           "nombre": "Naranja - Gr",
-          "precio": 100
+          "precio": 80
         },
         {
           "nombre": "Verde - Ch",
-          "precio": 55
+          "precio": 45
         },
         {
           "nombre": "Verde - Gr",
-          "precio": 100
+          "precio": 80
         },
         {
           "nombre": "Zanahoria - Ch",
-          "precio": 55
+          "precio": 45
         },
         {
           "nombre": "Zanahoria - Gr",
-          "precio": 100
+          "precio": 80
         },
         {
           "nombre": "Antigripal - Ch",
-          "precio": 55
+          "precio": 45
         },
         {
           "nombre": "Antigripal - Gr",
-          "precio": 100
+          "precio": 80
         },
         {
           "nombre": "Antioxidante - Ch",
-          "precio": 55
+          "precio": 45
         },
         {
           "nombre": "Antioxidante - Gr",
-          "precio": 100
+          "precio": 80
         }
       ]
     },
