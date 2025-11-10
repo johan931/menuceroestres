@@ -288,19 +288,19 @@
       "productos": [
         {
           "nombre": "Naranja - Ch",
-          "precio": 55
+          "precio": 45
         },
         {
           "nombre": "Verde - Ch",
-          "precio": 55
+          "precio": 45
         },
         {
           "nombre": "Antigripal - Ch",
-          "precio": 55
+          "precio": 45
         },
         {
           "nombre": "Antioxidante - Ch",
-          "precio": 55
+          "precio": 45
         }
       ]
     },
