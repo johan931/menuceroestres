@@ -211,7 +211,7 @@
       "productos": [
         {
           "nombre": "Arroz con leche",
-          "precio": 33
+          "precio": 35
         },
         {
           "nombre": "Carlota",
@@ -222,8 +222,12 @@
           "precio": 40
         },
         {
+          "nombre": "Flan napolitano",
+          "precio": 40
+        },
+        {
           "nombre": "Jericalla",
-          "precio": 33
+          "precio": 40
         },
         {
           "nombre": "Brownie",
@@ -259,7 +263,7 @@
         },
          {
           "nombre": "Tapioca",
-          "precio": 33
+          "precio": 35
          }
         ]
       }
